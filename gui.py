@@ -80,8 +80,8 @@ class WeatherAppGUI:
     def api_weather(self, lat, lon):
         
         # Format lat and long to be 2 decimal places
-        lat = f"{lat:.2f}"
-        lon = f"{lon:.2f}"
+        lat = f"{lat:.3f}"
+        lon = f"{lon:.3f}"
         
         # Convert the latitude and longitude to a URL for the weather data portion of API
         weather_url = f"https://pro.openweathermap.org/data/2.5/weather?lat={lat}&lon={lon}&units=imperial&appid={self.a_p_key}"
